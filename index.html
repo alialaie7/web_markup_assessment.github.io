@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Leisuregroup — Amsterdam (Semantic)</title>
+        <link rel="stylesheet" href="stylesheet/stylesheet.css" />
+    </head>
+    <body>
+        <!-- Top brand/title -->
+        <header class="site-header">
+            <section class="container brandbar" aria-label="Brand bar">
+                <span class="logo-circle" aria-hidden="true">
+                    <img
+                        class="logo-picture"
+                        src="/images/logo_transparent_big.png"
+                        alt="logo that is a dice with number and puzzle"
+                        width="500px"
+                        height="500px"
+                    />
+                </span>
+                <h1 class="site-title">Life is just a game</h1>
+            </section>
+
+            <nav class="nav-pill" aria-label="Primary">
+                <section class="container nav-wrap">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Museums</a>
+                    <a class="nav-link" href="#">Sports</a>
+                    <a class="nav-link" href="#">Mindfield</a>
+                    <a class="nav-link" href="#">Cultuur</a>
+
+                    <img
+                        class="logo-picture2"
+                        src="/images/logo_transparent.png"
+                        alt="logo that is a dice with number and puzzle"
+                    />
+                </section>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" aria-label="Welcome to Amsterdam">
+            <figure class="hero-frame">
+                <img
+                    class="hero-img"
+                    src="images/amsterdam_main.png"
+                    alt="Amsterdam canal at dusk with ferris wheel"
+                />
+                <figcaption class="hero-caption">
+                    <span class="welcome">welcome</span><br />
+                    <span class="to">to Amsterdam</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <main id="main">
+            <!-- CAROUSEL of categories -->
+            <section class="carousel" aria-label="Highlights carousel">
+                <section class="container">
+                    <button class="car-arrow left" aria-label="Scroll left">
+                        ◀
+                    </button>
+                    <ul class="car-track" id="track" tabindex="0">
+                        <li class="card">
+                            <img
+                                src="images/physical_activities.png"
+                                alt="Playing soccer"
+                            />
+                        </li>
+                        <li class="card">
+                            <img
+                                src="images/museums.png"
+                                alt="Immersive museum room"
+                            />
+                        </li>
+                        <li class="card">
+                            <img
+                                src="images/cultuur.png"
+                                alt="Friends eating out"
+                            />
+                        </li>
+                        <li class="card">
+                            <img src="images/mindfield.png" alt="Board games" />
+                        </li>
+                    </ul>
+                    <button class="car-arrow right" aria-label="Scroll right">
+                        ▶
+                    </button>
+
+                    <!-- <menu class="dots" role="presentation">
+                        <li class="dot" aria-hidden="true"></li>
+                        <li class="dot" aria-hidden="true"></li>
+                        <li class="dot" aria-hidden="true"></li>
+                        <li class="dot" aria-hidden="true"></li>
+                    </menu> -->
+                </section>
+            </section>
+
+            <!-- STORY BLOCK -->
+            <article class="story" aria-labelledby="story-title">
+                <section class="container story-card">
+                    <section class="story-text">
+                        <h2 id="story-title">
+                            It wasn’t always called Amsterdam
+                        </h2>
+                        <p>
+                            Amsterdam is the Dutch capital’s modern moniker, but
+                            it was originally called Amstrelredam. The name is
+                            thought to date back as far as 1275 and refers to
+                            the dam built across the <a
+                                href="https://www.getyourguide.com/en-gb/the-amstel-l3003/"
+                                rel="website"
+                                target="_blank"
+                                >Amstel River</a
+                            > to prevent flooding. As Amsterdam grew, its name
+                            was shortened and simplified, and Amsterdam became
+                            the norm.
+                        </p>
+                    </section>
+                    <figure class="story-media">
+                        <img
+                            src="images/amsterdam_text.jpg"
+                            alt="Historic canal homes in Amsterdam"
+                        />
+                    </figure>
+                </section>
+            </article>
+
+            <hr class="divider" />
+
+            <!-- MAP + QUICK LINKS -->
+            <section class="map-links" aria-labelledby="map-title">
+                <h2 id="map-title" class="visually-hidden">
+                    Explore Amsterdam
+                </h2>
+                <section class="container map-grid">
+                    <figure class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155960.00468901964!2d4.739154837760468!3d52.35455102216733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1761949595740!5m2!1sen!2snl"
+                            width="500"
+                            height="500"
+                            style="border: 5"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </figure>
+
+                    <section class="quick-links" aria-label="Quick categories">
+                        <a href="#" class="tile">
+                            <span class="tile-text">Museums</span>
+                            <img
+                                src="/images/museum_icon.png"
+                                alt="icon of museum"
+                            />
+                        </a>
+                        <a href="#" class="tile">
+                            <span class="tile-text">Boardgame</span>
+                            <img
+                                src="images/boardgame_icon.png"
+                                alt="boardgame icon"
+                            />
+                        </a>
+                        <a href="#" class="tile">
+                            <span class="tile-text">Restaurant</span>
+                            <img
+                                src="images/restaurant_icon.png"
+                                alt="restaurant icon"
+                            />
+                        </a>
+                        <a href="#" class="tile">
+                            <span class="tile-text">Playground</span>
+                            <img
+                                src="images/playground_icon.png"
+                                alt="playground icon"
+                            />
+                        </a>
+                    </section>
+                </section>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- OFFER STRIP -->
+            <aside class="offer" aria-labelledby="offer-title">
+                <section class="container">
+                    <h2 class="offer-title" id="offer-title">special offer</h2>
+                    <section class="offer-banner">
+                        <span class="offer-badge">30%</span>
+                        <section class="offer-copy">
+                            <p>
+                                visit this place<br />for
+                                <strong>30% off</strong> this week
+                            </p>
+                            <p><a class="offer-link" href="#">click here</a></p>
+                        </section>
+                        <figure class="offer-art" aria-hidden="true"></figure>
+                    </section>
+                </section>
+            </aside>
+        </main>
+
+        <footer class="site-footer">
+            <section class="container foot-grid">
+                <section class="foot-brand">
+                    <span class="logo-circle" aria-hidden="true"></span>
+                    <strong>leisuregroup</strong>
+                </section>
+
+                <nav class="foot-links" aria-label="Social">
+                    <a href="#">Contact</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">WhatsApp</a>
+                </nav>
+
+                <form class="newsletter" action="#" method="post">
+                    <label for="email" class="visually-hidden"
+                        >Your email address</label
+                    >
+                    <input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="Your email address..."
+                    />
+                    <button class="btn" type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <section
+                class="container foot-meta"
+                aria-label="Legal and copyright"
+            >
+                <nav class="meta-links" aria-label="Legal links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Legal</a>
+                </nav>
+                <p class="copyright">
+                    © <span id="year"></span> All rights reserved
+                </p>
+            </section>
+        </footer>
+
+        <script>
+            // Simple carousel scroll controls
+            const track = document.getElementById("track");
+            const left = document.querySelector(".car-arrow.left");
+            const right = document.querySelector(".car-arrow.right");
+            function scrollByCard(dir = 1) {
+                const card = track.querySelector(".card");
+                if (!card) return;
+                track.scrollBy({
+                    left: card.getBoundingClientRect().width * dir + 16,
+                    behavior: "smooth",
+                });
+            }
+            left?.addEventListener("click", () => scrollByCard(-1));
+            right?.addEventListener("click", () => scrollByCard(1));
+
+            // Year stamp
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
