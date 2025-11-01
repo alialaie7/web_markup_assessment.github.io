@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Leisuregroup — Amsterdam (Semantic)</title>
         <link rel="stylesheet" href="stylesheet/stylesheet.css" />
+        <script src="scripts/app.js" defer></script>
     </head>
     <body>
-        <!-- Top brand/title -->
         <header class="site-header">
             <section class="container brandbar" aria-label="Brand bar">
                 <span class="logo-circle" aria-hidden="true">
                     <img
                         class="logo-picture"
-                        src="/images/logo_transparent_big.png"
+                        src="./images/logo_transparent_big.png"
                         alt="logo that is a dice with number and puzzle"
                         width="500px"
                         height="500px"
@@ -32,30 +32,28 @@
 
                     <img
                         class="logo-picture2"
-                        src="/images/logo_transparent.png"
+                        src="./images/logo_transparent.png"
                         alt="logo that is a dice with number and puzzle"
                     />
                 </section>
             </nav>
         </header>
 
-        <!-- HERO -->
-        <section class="hero" aria-label="Welcome to Amsterdam">
-            <figure class="hero-frame">
-                <img
-                    class="hero-img"
-                    src="images/amsterdam_main.png"
-                    alt="Amsterdam canal at dusk with ferris wheel"
-                />
-                <figcaption class="hero-caption">
-                    <span class="welcome">welcome</span><br />
-                    <span class="to">to Amsterdam</span>
-                </figcaption>
-            </figure>
-        </section>
-
         <main id="main">
-            <!-- CAROUSEL of categories -->
+            <section class="hero" aria-label="Welcome to Amsterdam">
+                <figure class="hero-frame">
+                    <img
+                        class="hero-img"
+                        src="images/amsterdam_main.png"
+                        alt="Amsterdam canal at dusk with ferris wheel"
+                    />
+                    <figcaption class="hero-caption">
+                        <span class="welcome">welcome</span><br />
+                        <span class="to">to Amsterdam</span>
+                    </figcaption>
+                </figure>
+            </section>
+
             <section class="carousel" aria-label="Highlights carousel">
                 <section class="container">
                     <button class="car-arrow left" aria-label="Scroll left">
@@ -87,17 +85,9 @@
                     <button class="car-arrow right" aria-label="Scroll right">
                         ▶
                     </button>
-
-                    <!-- <menu class="dots" role="presentation">
-                        <li class="dot" aria-hidden="true"></li>
-                        <li class="dot" aria-hidden="true"></li>
-                        <li class="dot" aria-hidden="true"></li>
-                        <li class="dot" aria-hidden="true"></li>
-                    </menu> -->
                 </section>
             </section>
 
-            <!-- STORY BLOCK -->
             <article class="story" aria-labelledby="story-title">
                 <section class="container story-card">
                     <section class="story-text">
@@ -129,7 +119,6 @@
 
             <hr class="divider" />
 
-            <!-- MAP + QUICK LINKS -->
             <section class="map-links" aria-labelledby="map-title">
                 <h2 id="map-title" class="visually-hidden">
                     Explore Amsterdam
@@ -151,7 +140,7 @@
                         <a href="#" class="tile">
                             <span class="tile-text">Museums</span>
                             <img
-                                src="/images/museum_icon.png"
+                                src="images/museum_icon.png"
                                 alt="icon of museum"
                             />
                         </a>
@@ -182,8 +171,7 @@
 
             <hr class="divider" />
 
-            <!-- OFFER STRIP -->
-            <aside class="offer" aria-labelledby="offer-title">
+            <aside class="offer">
                 <section class="container">
                     <h2 class="offer-title" id="offer-title">special offer</h2>
                     <section class="offer-banner">
@@ -195,7 +183,10 @@
                             </p>
                             <p><a class="offer-link" href="#">click here</a></p>
                         </section>
-                        <figure class="offer-art" aria-hidden="true"></figure>
+                        <img
+                            src="images/offer_picture.png"
+                            alt="A girl pointing to the offer"
+                        />
                     </section>
                 </section>
             </aside>
@@ -204,7 +195,9 @@
         <footer class="site-footer">
             <section class="container foot-grid">
                 <section class="foot-brand">
-                    <span class="logo-circle" aria-hidden="true"></span>
+                    <span class="logo-circle" aria-hidden="true">
+                        <img src="images/logo_transparent_big.png" alt="" />
+                    </span>
                     <strong>leisuregroup</strong>
                 </section>
 
@@ -245,26 +238,5 @@
                 </p>
             </section>
         </footer>
-
-        <script>
-            // Simple carousel scroll controls
-            const track = document.getElementById("track");
-            const left = document.querySelector(".car-arrow.left");
-            const right = document.querySelector(".car-arrow.right");
-            function scrollByCard(dir = 1) {
-                const card = track.querySelector(".card");
-                if (!card) return;
-                track.scrollBy({
-                    left: card.getBoundingClientRect().width * dir + 16,
-                    behavior: "smooth",
-                });
-            }
-            left?.addEventListener("click", () => scrollByCard(-1));
-            right?.addEventListener("click", () => scrollByCard(1));
-
-            // Year stamp
-            document.getElementById("year").textContent =
-                new Date().getFullYear();
-        </script>
     </body>
 </html>
