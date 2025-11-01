@@ -1,4 +1,3 @@
-/* --- Tokens --- */
 :root {
     --bg-top: #bfe6ff;
     --bg-bottom: #77b9e7;
@@ -119,6 +118,7 @@ a:hover {
     margin: 0;
 }
 
+/*-------------------------- This Is Home Page----------------------- */
 /* Nav pill */
 .nav-pill {
     position: sticky;
@@ -306,7 +306,7 @@ a:hover {
     margin-top: 0.25rem;
 }
 
-/* --- Offer --- */
+/* --- Special Offer --- */
 .offer {
     padding: 1rem 0 2.5rem;
 }
@@ -467,6 +467,137 @@ a:hover {
     color: #9fb3c4;
 }
 
+.cookies {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(13, 34, 41, 0.96);
+    color: #e7f6ff;
+}
+.cookie-btn {
+    background: #8de8a0;
+    color: #08361f;
+    text-decoration: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+/*-------------------------- This Is contact page----------------------- */
+
+/* form for contact us */
+.contact-card {
+    position: relative;
+    margin-left: auto;
+    margin-right: 4%;
+    width: min(35rem, 70vw);
+    height: min(40rem, 80vw);
+    background: var(--panel);
+    color: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    padding: 1.25rem clamp(1rem, 2.5vw, 2rem) 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.form-title {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: center;
+    font-size: clamp(1.6rem, 3.8vw, 2.2rem);
+    margin: 0.25rem 0 1rem;
+    letter-spacing: 0.02em;
+}
+
+.contact-form {
+    margin-top: 0.25rem;
+}
+
+.name-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    border: 0;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.field {
+    margin: 0.5rem 0 1rem;
+}
+
+label {
+    display: block;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    background: var(--white);
+    padding: 0.9rem 1.1rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+textarea {
+    border-radius: 20px;
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.actions {
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+}
+
+.submit-btn {
+    background: var(--green);
+    border: 3px solid var(--green-dark);
+    color: #000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 3.5vw, 2rem);
+    border-radius: 999px;
+    padding: 0.6rem 2.25rem;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.submit-btn:hover {
+    filter: brightness(0.5);
+    background-color: #8785857e;
+}
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
 /* --- Responsive --- */
 @media (max-width: 860px) {
     .brandbar {
@@ -491,5 +622,9 @@ a:hover {
     }
     .newsletter {
         justify-content: center;
+    }
+    .cookies {
+        flex-direction: column;
+        text-align: center;
     }
 }
