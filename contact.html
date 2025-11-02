@@ -36,6 +36,7 @@
             type="text/css"
         />
     </head>
+
     <body>
         <header class="site-header">
             <section class="container brandbar" aria-label="Brand bar">
@@ -66,94 +67,195 @@
                     />
                 </section>
             </nav>
+        </header>
 
         <main id="home">
-            
+            <section class="contact-section">
+                <article>
+                    <p>
+                        Email :
+                        <a href="mailto:alisheshjvan@gmail.com" target="_blank"
+                            >Alisheshjvan@gmail.com</a
+                        >
+                    </p>
+                    <p>
+                        Phone :
+                        <a href="tel:06123456789" target="_blank"
+                            >06123456789</a
+                        >
+                    </p>
+                    <p>
+                        WhatsApp :
+                        <a href="https://web.whatsapp.com/" target="_blank"
+                            >@WhatsApp Link</a
+                        >
+                    </p>
+                    <p>
+                        Instagram :
+                        <a href="https://www.instagram.com/" target="_blank"
+                            >@Instagram link</a
+                        >
+                    </p>
+                </article>
+                <aside class="image-aside">
+                    <img
+                        src="images/contact_banner.png"
+                        alt="banner of contact us"
+                    />
+                </aside>
+            </section>
+            <section class="section-text">
+                <p class="contact-text">
+                    Have a question or idea? <br />Send me a message and<br />
+                    I’ll get back to you soon!
+                </p>
+                <h2 class="margin-text">Working Hours</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 AM</td>
+                            <td>2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td colspan="2">Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-                <section class="contact-card">
-                    <h2 class="form-title">contact form</h2>
+            <section class="contact-card">
+                <h2 class="form-title">contact form</h2>
 
-                    <form class="contact-form" action="#" method="post" novalidate>
+                <form class="contact-form" action="#" method="post" novalidate>
                     <fieldset class="name-row">
                         <legend class="visually-hidden">Your name</legend>
 
                         <p class="field">
-                        <label for="first">First Name</label>
-                        <input id="first" name="first" type="text" required>
+                            <label class="form_label" for="first"
+                                >First Name</label
+                            >
+                            <input
+                                id="first"
+                                name="first"
+                                type="text"
+                                required
+                            />
                         </p>
 
                         <p class="field">
-                        <label for="last">Last Name</label>
-                        <input id="last" name="last" type="text" required>
+                            <label class="form_label" for="last"
+                                >Last Name</label
+                            >
+                            <input id="last" name="last" type="text" required />
                         </p>
                     </fieldset>
 
                     <p class="field">
-                        <label for="email">Email Address</label>
-                        <input id="email" name="email" type="email" required>
+                        <label class="form_label" for="email"
+                            >Email Address</label
+                        >
+                        <input id="email" name="email" type="email" required />
                     </p>
 
                     <p class="field">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="8" required></textarea>
+                        <label class="form_label" for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            required
+                        ></textarea>
                     </p>
 
                     <p class="actions">
                         <button type="submit" class="submit-btn">submit</button>
                     </p>
-                    </form>
-                </section>
-
-
-        <footer class="site-footer">
-            <section class="container foot-grid">
-                <section class="foot-brand">
-                    <span class="logo-circle" aria-hidden="true">
-                        <img src="images/logo_transparent_big.png" alt="" />
-                    </span>
-                    <strong>leisuregroup</strong>
-                </section>
-
-                <nav class="foot-links" aria-label="Social">
-                    <a href="#">Contact</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Telegram</a>
-                    <a href="#">WhatsApp</a>
-                </nav>
-
-                <form class="newsletter" action="#" method="post">
-                    <label for="email" class="visually-hidden"
-                        >Your email address</label
-                    >
-                    <input
-                        id="email"
-                        type="email"
-                        required
-                        placeholder="Your email address..."
-                    />
-                    <button class="btn" type="submit">Subscribe</button>
                 </form>
             </section>
 
-            <section
-                class="container foot-meta"
-                aria-label="Legal and copyright"
-            >
-                <nav class="meta-links" aria-label="Legal links">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Accessibility</a>
-                    <a href="#">Legal</a>
-                </nav>
-                <p class="copyright">
-                    © <span id="year"></span> All rights reserved
-                </p>
-            </section>
-        </footer>
+            <footer class="site-footer">
+                <section class="container foot-grid">
+                    <section class="foot-brand">
+                        <span class="logo-circle" aria-hidden="true">
+                            <img src="images/logo_transparent_big.png" alt="" />
+                        </span>
+                        <strong>leisuregroup</strong>
+                    </section>
 
-        <!-- Cookies message (z-index: 9999) -->
-        <!-- <aside
+                    <nav class="foot-links" aria-label="Social">
+                        <a href="#">Contact</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">WhatsApp</a>
+                    </nav>
+
+                    <form class="newsletter" action="#" method="post">
+                        <label for="email" class="visually-hidden"
+                            >Your email address</label
+                        >
+                        <input
+                            id="emailAddress"
+                            type="email"
+                            required
+                            placeholder="Your email address..."
+                        />
+                        <button class="btn" type="submit">Subscribe</button>
+                    </form>
+                </section>
+
+                <section
+                    class="container foot-meta"
+                    aria-label="Legal and copyright"
+                >
+                    <nav class="meta-links" aria-label="Legal links">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Legal</a>
+                    </nav>
+                    <p class="copyright">
+                        © <span id="year"></span> All rights reserved
+                    </p>
+                </section>
+            </footer>
+
+            <!-- Cookies message (z-index: 9999) -->
+            <!-- <aside
             class="cookies"
             role="dialog"
             aria-live="polite"
@@ -170,5 +272,6 @@
             aria-label="Dismiss cookies message">Got it</label>
 
         </aside> -->
+        </main>
     </body>
 </html>
