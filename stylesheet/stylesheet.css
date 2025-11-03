@@ -685,11 +685,6 @@ textarea {
 
 /* --------------------------------------this is culture page----------------------------------/
 /* ——— page layout & typography ——— */
-.container {
-    max-width: 980px;
-    margin-inline: auto;
-    padding-inline: 1.25rem;
-}
 
 .culture .title {
     font-family: "Georgia", Cambria, "Times New Roman", serif;
@@ -697,15 +692,17 @@ textarea {
     line-height: 1.05;
     letter-spacing: 0.5px;
     text-align: center;
-    margin: 1.25rem 0 0.75rem;
+    margin: 5rem 0 0.75rem;
     text-shadow: 0 1px 0 #fff3, 0 3px 12px rgba(0, 0, 0, 0.18);
 }
 
 .culture .lead {
     max-width: 62ch;
-    margin: 0 auto 2.25rem;
+    margin: 4rem auto 4rem;
     font-weight: 600;
     color: var(--muted);
+    font-size: x-large;
+    text-align: justify;
 }
 
 /* ——— intro split ——— */
@@ -713,7 +710,7 @@ textarea {
     display: grid;
     gap: 2rem;
     align-items: start;
-    grid-template-columns: 1fr;
+
     margin-block: 1rem 2.5rem;
 }
 .card {
@@ -722,18 +719,19 @@ textarea {
     box-shadow: var(--shadow);
     /* padding: 0.75rem; */
 }
-.card > img {
+.intro .card > img {
+    aspect-ratio: auto;
     display: block;
     width: 100%;
     height: auto;
     border-radius: calc(var(--radius) - 6px);
 }
 .copy {
-    font-size: 1.05rem;
+    font-size: 1.7rem;
 }
 @media (min-width: 800px) {
     .intro {
-        grid-template-columns: 360px 1fr;
+        grid-template-columns: 500px 1fr;
         align-items: center;
     }
 }
@@ -744,15 +742,18 @@ textarea {
     gap: 2rem;
     grid-template-columns: 1fr;
     margin-block: 1rem 2.75rem;
+    margin-top: 10rem;
+    padding-left: 7%;
 }
 .resources .h {
     font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem 0 1.5rem 0;
 }
 .resources ul {
     margin: 0.5rem 0 0;
     padding-left: 1.5rem;
-    font-size: 1.125rem;
+    font-size: 2.2rem;
+    font-family: "Playfair Display", Georgia, serif;
 }
 .resources li + li {
     margin-top: 0.5rem;
@@ -768,6 +769,9 @@ textarea {
 .resources .art {
     justify-self: center;
     max-width: 420px;
+}
+.resources .card > img {
+    aspect-ratio: auto;
 }
 @media (min-width: 900px) {
     .resources {
