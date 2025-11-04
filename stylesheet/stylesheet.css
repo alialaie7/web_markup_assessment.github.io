@@ -872,3 +872,113 @@ textarea {
         text-align: center;
     }
 }
+
+/* -------------------------------sport page----------------------*/
+
+/* ===== Sports page (simple, responsive, no duplicated rules) ===== */
+.sports img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+/* headings */
+.section-title {
+    margin: 0 0 0.75rem;
+    font-weight: 800;
+}
+.title-hero,
+.title-banner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+.title-hero {
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+.title-banner {
+    color: #fff;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+/* hero + banner */
+.hero figure,
+.banner figure {
+    position: relative;
+}
+.hero img {
+    max-height: clamp(280px, 45vw, 520px);
+    object-fit: cover;
+}
+.banner img {
+    max-height: clamp(220px, 35vw, 420px);
+    object-fit: cover;
+}
+
+/* lead text */
+.lead p {
+    font-weight: 700;
+    max-width: 70ch;
+    margin: 1.25rem auto 2rem;
+}
+
+/* two column layout (reused) */
+.two-col {
+    display: grid;
+    gap: 1.25rem;
+    align-items: start;
+}
+@media (min-width: 900px) {
+    .two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* badges */
+.badges {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.badges a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    background: #aeddff;
+    color: #062327;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(8, 28, 36, 0.12);
+}
+.badges a:focus,
+.badges a:hover {
+    outline: 2px solid #1095ff;
+    outline-offset: 2px;
+}
+
+/* rules & links */
+.rules {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+.links {
+    margin: 0.25rem 0 0;
+    padding-left: 1.2rem;
+}
+.links a {
+    font-weight: 800;
+    text-underline-offset: 3px;
+}

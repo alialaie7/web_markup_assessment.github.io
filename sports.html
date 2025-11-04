@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Leisuregroup — Amsterdam (Semantic)</title>
+        <link rel="stylesheet" href="stylesheet/stylesheet.css" />
+        <script src="scripts/app.js" defer></script>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23286F8A'/%3E%3Ctext x='50' y='64' font-size='58' text-anchor='middle' fill='white'%3E%F0%9F%8F%90%3C/text%3E%3C/svg%3E"
+        />
+    </head>
+    <body>
+        <header class="site-header">
+            <section class="container brandbar" aria-label="Brand bar">
+                <span class="logo-circle" aria-hidden="true">
+                    <img
+                        class="logo-picture"
+                        src="./images/logo_transparent_big.png"
+                        alt="logo that is a dice with number and puzzle"
+                        width="500px"
+                        height="500px"
+                    />
+                </span>
+                <h1 class="site-title">Life is just a game</h1>
+            </section>
+
+            <nav class="nav-pill" aria-label="Primary">
+                <section class="container nav-wrap">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#">Museums</a>
+                    <a class="nav-link" href="#">Sports</a>
+                    <a class="nav-link" href="#">Mindfield</a>
+                    <a class="nav-link" href="culture.html">Cultuur</a>
+
+                    <img
+                        class="logo-picture2"
+                        src="./images/logo_transparent.png"
+                        alt="logo that is a dice with number and puzzle"
+                    />
+                </section>
+            </nav>
+        </header>
+
+        <main class="sports">
+            <!-- hero -->
+            <section class="hero">
+                <figure>
+                    <img
+                        src="images/gallery/sport_banner.png"
+                        alt="Silhouettes of different sports in motion"
+                    />
+                    <figcaption class="title-hero">sports</figcaption>
+                </figure>
+            </section>
+
+            <!-- intro -->
+            <section class="container lead">
+                <p>
+                    Amsterdam is home to AFC Ajax, one of Europe’s most
+                    successful football clubs, known for its legendary youth
+                    academy “De Toekomst” (“The Future”). Many world-class
+                    players — like Johan Cruyff and Matthijs de Ligt — started
+                    their careers there.
+                </p>
+            </section>
+
+            <!-- competitions + image -->
+            <section class="container two-col">
+                <article>
+                    <h2 class="section-title">competitions :</h2>
+                    <ul class="badges">
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">calisthenics</a></li>
+                        <li><a href="#">volleyball</a></li>
+                        <li><a href="#">BMX</a></li>
+                        <li><a href="#">boxing</a></li>
+                    </ul>
+                </article>
+
+                <figure>
+                    <img
+                        src="images/gallery/football.png"
+                        alt="Teenagers playing football on a field"
+                    />
+                </figure>
+            </section>
+
+            <!-- playgrounds banner -->
+            <section class="banner">
+                <figure>
+                    <img
+                        src="images/gallery/playground.png"
+                        alt="Children playing on a playground"
+                    />
+                    <figcaption class="title-banner">playgrounds</figcaption>
+                </figure>
+            </section>
+
+            <!-- rules + list of playgrounds -->
+            <section class="container two-col">
+                <article>
+                    <h3 class="section-title">Rules :</h3>
+                    <ol class="rules">
+                        <li>Dogs are not allowed on children’s playgrounds.</li>
+                        <li>
+                            Clean up after your dog and use designated off-leash
+                            areas only.
+                        </li>
+                        <li>No alcohol in public parks and playgrounds.</li>
+                        <li>
+                            Equipment must meet safety requirements and be
+                            inspected.
+                        </li>
+                        <li>Do not disturb others or damage public areas.</li>
+                    </ol>
+                </article>
+
+                <aside>
+                    <h3 class="section-title">list of playgrounds</h3>
+                    <ul class="links">
+                        <li><a href="#">playground Amstelpark</a></li>
+                        <li><a href="#">Van Tuyll Playground</a></li>
+                        <li><a href="#">Speeltuin Amsterdam Zuid</a></li>
+                        <li><a href="#">Johnny Jordaan Plein</a></li>
+                        <li><a href="#">Playground Herenmarkt</a></li>
+                        <li><a href="#">Bloesempark</a></li>
+                        <li><a href="#">Speelplaats Amstelveld</a></li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <section class="container foot-grid">
+                <section class="foot-brand">
+                    <span class="logo-circle" aria-hidden="true">
+                        <img src="images/logo_transparent_big.png" alt="" />
+                    </span>
+                    <strong>leisuregroup</strong>
+                </section>
+
+                <nav class="foot-links" aria-label="Social">
+                    <a href="contact.html">Contact</a>
+                    <a href="https://www.youtube.com/">YouTube</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://web.telegram.org/k/">Telegram</a>
+                    <a href="https://web.whatsapp.com/">WhatsApp</a>
+                </nav>
+
+                <form class="newsletter" action="#" method="post">
+                    <label for="email" class="visually-hidden"
+                        >Your email address</label
+                    >
+                    <input
+                        id="emailAddress"
+                        type="email"
+                        required
+                        placeholder="Your email address..."
+                    />
+                    <button class="btn" type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <section
+                class="container foot-meta"
+                aria-label="Legal and copyright"
+            >
+                <nav class="meta-links" aria-label="Legal links">
+                    <a>Terms & Conditions</a>
+                    <a>Privacy Policy</a>
+                    <a>Accessibility</a>
+                    <a>Legal</a>
+                </nav>
+                <p class="copyright">
+                    © <span id="year"></span> All rights reserved
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>
