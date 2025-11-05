@@ -1,0 +1,5 @@
+Student name: Ali Alaie
+Student number: 745107
+Student class: IT1B
+GitHub Repository: https://github.com/alialaie7/web_markup_assessment.github.io.git
+GitHub Pages URL: https://alialaie7.github.io/web_markup_assessment.github.io/
