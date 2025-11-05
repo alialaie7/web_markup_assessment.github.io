@@ -75,7 +75,7 @@ a:hover {
     border: 0;
 }
 
-/* --- Header --- */
+/* ------------------------- Header -------------------- */
 .site-header {
     padding-top: 0.75rem;
     border-bottom: 3px solid black;
@@ -122,7 +122,7 @@ a:hover {
 }
 
 /*-------------------------- This Is Home Page----------------------- */
-/* Nav pill */
+
 .nav-pill {
     position: sticky;
     background: var(--pill);
@@ -147,7 +147,6 @@ a:hover {
     padding: 0.25rem 0.25rem;
 }
 
-/* --- Hero --- */
 .hero {
     padding: 0;
     margin-inline: calc(50% - 50vw);
@@ -186,7 +185,6 @@ a:hover {
     font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
-/* --- Carousel --- */
 .carousel {
     padding: 2rem 0 1rem;
     position: relative;
@@ -237,7 +235,6 @@ a:hover {
     right: 0.5rem;
 }
 
-/* --- Story panel --- */
 .story {
     padding: 1.5rem 0;
 }
@@ -261,7 +258,6 @@ a:hover {
     border-radius: 10px;
 }
 
-/* --- Dividers --- */
 .divider {
     border: none;
     height: 2px;
@@ -270,7 +266,6 @@ a:hover {
     margin: 2rem auto;
 }
 
-/* --- Map + Quick Links --- */
 .map-grid {
     display: grid;
     grid-template-columns: 1fr min(44%, 440px);
@@ -310,7 +305,6 @@ a:hover {
     margin-top: 0.25rem;
 }
 
-/* --- Special Offer --- */
 .offer {
     padding: 1rem 0 2.5rem;
 }
@@ -377,7 +371,7 @@ a:hover {
     border-radius: 14px;
 }
 
-/* --- Footer --- */
+/* --------------------------- Footer ----------------------------- */
 .site-footer {
     background: var(--footer-bg);
     color: #d7dde3;
@@ -684,8 +678,7 @@ textarea {
     border-bottom: 1px solid #ccc;
 }
 
-/* --------------------------------------this is culture page----------------------------------/
-/* ——— page layout & typography ——— */
+/* --------------------------------------this is culture page----------------------------------*/
 
 .culture .title {
     font-family: "Georgia", Cambria, "Times New Roman", serif;
@@ -706,7 +699,6 @@ textarea {
     text-align: justify;
 }
 
-/* ——— intro split ——— */
 .intro {
     display: grid;
     gap: 2rem;
@@ -737,7 +729,6 @@ textarea {
     }
 }
 
-/* ——— resources (links + art) ——— */
 .resources {
     display: grid;
     gap: 2rem;
@@ -787,7 +778,6 @@ textarea {
     }
 }
 
-/* ——— section divider title with lines ——— */
 .section-divider {
     display: grid;
     grid-auto-flow: column;
@@ -807,7 +797,6 @@ textarea {
     background: linear-gradient(90deg, transparent, var(--ink), transparent);
 }
 
-/* ——— gallery ——— */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -837,13 +826,12 @@ textarea {
     }
 }
 
-/* ——— small polish ——— */
 .culture a:focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 2px;
 }
 
-/* --- Responsive --- */
+/* -------------------- Responsive ------------------ */
 @media (max-width: 860px) {
     .brandbar {
         grid-template-columns: 36px 1fr 36px;
@@ -876,14 +864,12 @@ textarea {
 
 /* -------------------------------sport page----------------------*/
 
-/* ===== Sports page (simple, responsive, no duplicated rules) ===== */
 .sports img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* headings */
 .section-title {
     margin: 0 0 0.75rem;
     font-weight: 800;
@@ -906,7 +892,6 @@ textarea {
     font-size: clamp(2rem, 6vw, 3.2rem);
 }
 
-/* hero + banner */
 .hero figure,
 .banner figure {
     position: relative;
@@ -928,7 +913,6 @@ textarea {
     text-align: center;
 }
 
-/* lead text */
 .lead p {
     font-weight: 700;
     max-width: 70ch;
@@ -936,7 +920,6 @@ textarea {
     font-size: x-large;
 }
 
-/* two column layout (reused) */
 .two-col {
     display: grid;
     gap: 1.25rem;
@@ -948,7 +931,6 @@ textarea {
     }
 }
 
-/* badges */
 .badges {
     list-style: none;
     padding: 0;
@@ -976,7 +958,6 @@ textarea {
     outline-offset: 2px;
 }
 
-/* rules & links */
 .rules {
     margin: 50px 0 50px 0;
     padding-left: 0;
